@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用数组存数据</title>
+</head>
+
+<body>
+    <script>
+        var arr = ['宝马', '丰田', '本田'];
+        // 以索引来存储数据到数组中
+        arr[3] = '福特';
+        // 未刷新前，以Array(4)这种形式展现,代表数组中有4个数据
+        // 当刷新页面后,就会以(4) ["宝马", "丰田", "本田", "福特"]这种形式展现,这种方式叫自变量
+        console.log(arr);   
+        // 如果想取数组中的第一个数据,打印数组的索引为0的数据即可,也就是arr[0]
+        console.log(arr[0]);
+    </script>
+</body>
+
+</html>

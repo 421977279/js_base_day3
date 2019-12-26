@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>求数组的平均值</title>
+</head>
+
+<body>
+    <script>
+        // 全部同学的测评分数新鲜出炉，以数组展示各分数出来
+        var score = [88, 90, 78, 100, 89, 95, 93, 99]
+        // 首先,让总分初始化为0,它是一个常量;
+        var total = 0;
+        // 使用for循环来遍历全部同学的测评分数来算出总分数
+        for (var i = 0; i < score.length; i++) {
+            total += score[i]
+        }
+        // 打印出全部同学的测评总分数
+        console.log(total);
+        // 计算全部同学的平均分
+        // 数组中的索引长度就是代表班上的同学数,即score.length
+        // 同理,将0赋值给平均分使其初始化
+        var avg = 0;
+        avg = total / score.length;
+        // 最终打印全部同学的平均分
+        console.log(avg);
+    </script>
+</body>
+
+</html>
